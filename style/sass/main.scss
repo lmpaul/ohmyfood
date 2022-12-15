@@ -1,0 +1,15 @@
+// Importing scss base
+@import './base/base';
+
+// Importing scss utils
+@import './utils/variables';
+@import './utils/mixins';
+
+// Importing scss layouts
+@import './layouts/header';
+
+// Importing scss for pages
+@import './pages/home';
+
+// Importing scss for components
+@import './components/cards'

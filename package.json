@@ -1,0 +1,16 @@
+{
+  "name": "ohmyfood",
+  "version": "1.0.0",
+  "description": "OpenClassrooms Project",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./style/sass/main.scss:./style/style.css --style compressed"
+  },
+  "repository": "git@github.com:lmpaul/ohmyfood.git",
+  "author": "Paul Le Mercier <paul.lemercier05@gmail.com>",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "sass": "^1.56.2"
+  }
+}
