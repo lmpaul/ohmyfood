@@ -4,7 +4,7 @@
   "description": "OpenClassrooms Project",
   "main": "index.js",
   "scripts": {
-    "sass": "sass --watch ./style/sass/main.scss:./style/style.css --style compressed"
+    "sass": "sass --watch ./style/sass/main.scss:./style/style.css --style expanded"
   },
   "repository": "git@github.com:lmpaul/ohmyfood.git",
   "author": "Paul Le Mercier <paul.lemercier05@gmail.com>",

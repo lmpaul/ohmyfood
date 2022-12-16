@@ -8,6 +8,10 @@
   position: relative;
   width: 80%;
 
+  &--pink {
+    background-color: lighten($color-primary, 35);
+  }
+
   &__number {
     width: 20px;
     height: 20px;
