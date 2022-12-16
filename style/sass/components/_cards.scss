@@ -2,9 +2,7 @@
   @include card;
   padding: 25px 10px;
   background-color: $light-grey;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  @include flex-center;
   position: relative;
   width: 80%;
 

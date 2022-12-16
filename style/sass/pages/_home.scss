@@ -1,6 +1,10 @@
-.steps,
-.restaurants {
+.steps, .restaurants {
   padding: 20px;
+
+  &__container {
+    @include flex-center;
+    flex-direction: column;
+  }
 }
 
 .restaurants {
@@ -42,9 +46,4 @@
       }
 
     }
-}
-
-.steps__container, .restaurants__container {
-  @include flex-center;
-  flex-direction: column;
 }
