@@ -1,9 +1,9 @@
-// Importing scss base
-@import './base/base';
-
 // Importing scss utils
 @import './utils/variables';
 @import './utils/mixins';
+
+// Importing scss base
+@import './base/base';
 
 // Importing scss layouts
 @import './layouts/layouts';
