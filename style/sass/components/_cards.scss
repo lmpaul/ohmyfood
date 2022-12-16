@@ -39,6 +39,8 @@
   @include card;
   width: 100%;
   overflow: hidden;
+  text-decoration: none;
+  color: black;
 
   &__picture {
     position: relative;
