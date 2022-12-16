@@ -4,56 +4,123 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ohmyfood - Menu</title>
+  <link rel="stylesheet" href="./style/style.css">
+  <title>Menu - À la française</title>
+  <!--Google Fonts-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Shrikhand&display=swap"
+    rel="stylesheet">
 </head>
 <body>
   <header>
     <img src="images/logo/ohmyfood.png" alt="ohmyfood logo">
   </header>
-  <div>
+
+  <div class="container">
+    <section class="restaurant-picture">
+      <img src="images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="">
+    </section>
+
+    <div class="restaurant-menu">
+      <div class="restaurant-menu__title">
+        <h1>À la française</h1>
+        <i class="fa-regular fa-heart"></i>
+      </div>
+
+      <section class="restaurant-menu-section">
+        <h2 class="restaurant-menu-section__title">ENTRÉES</h2>
+        <div class="restaurant-menu-section__bar"></div>
+        <div class='card-food'>
+          <div class="card-food__text">
+            <h3>Tartare de poulpe acidulé</h3>
+            <p>Aux zestes d'orange</p>
+          </div>
+          <p class="card-food__price">25€</p>
+        </div>
+        <div class='card-food'>
+          <div class="card-food__text">
+            <h3>Velouté de légumes d'antan</h3>
+            <p>Carotte, panais, topinambour</p>
+          </div>
+          <p class="card-food__price">35€</p>
+        </div>
+        <div class='card-food'>
+          <div class="card-food__text">
+            <h3>Soupe à l'oignon</h3>
+            <p>Revisitée</p>
+          </div>
+          <p class="card-food__price">20€</p>
+        </div>
+      </section>
+      <section class="restaurant-menu-section">
+        <h2 class="restaurant-menu-section__title">PLATS</h2>
+        <div class="restaurant-menu-section__bar"></div>
+        <div class='card-food'>
+          <div class="card-food__text">
+            <h3>Coquilles Saint-Jacques</h3>
+            <p>Accompagnées d'une purée de panais</p>
+          </div>
+          <p class="card-food__price">40€</p>
+        </div>
+        <div class='card-food'>
+          <div class="card-food__text">
+            <h3>Magret de canard</h3>
+            <p>Et parmentier de pommes de terre</p>
+          </div>
+          <p class="card-food__price">35€</p>
+        </div>
+        <div class='card-food'>
+          <div class="card-food__text">
+            <h3>Pigeonneau d'Ille-et-Vilaine</h3>
+            <p>Sur son lit de gnocchis aux légumes</p>
+          </div>
+          <p class="card-food__price">44€</p>
+        </div>
+      </section>
+      <section class="restaurant-menu-section">
+        <h2 class="restaurant-menu-section__title">DESSERTS</h2>
+        <div class="restaurant-menu-section__bar"></div>
+        <div class='card-food'>
+          <div class="card-food__text">
+            <h3>Pétales de violettes glacées</h3>
+            <p>Et purée de noisettes</p>
+          </div>
+          <p class="card-food__price">18€</p>
+        </div>
+        <div class='card-food'>
+          <div class="card-food__text">
+            <h3>Fondant au chocolat</h3>
+            <p>Revisité</p>
+          </div>
+          <p class="card-food__price">22€</p>
+        </div>
+        <div class='card-food'>
+          <div class="card-food__text">
+            <h3>Millefeuille croustillant</h3>
+            <p>Myrtille et pâte d'amande</p>
+          </div>
+          <p class="card-food__price">23€</p>
+        </div>
+      </section>
+
+      <button>Commander</button>
+
+    </div>
 
   </div>
-  <div>
-    <h1>À la française</h1>
-    <section id="sarters">
-      <h2>ENTRÉES</h2>
-      <div>
-        <div>
-          <p>Tartare de poulpe acidulé</p>
-          <p>Aux zestes d'orange</p>
-        </div>
-        <p>25€</p>
-      </div>
-    </section>
-    <section id="main-courses">
-      <h2>PLATS</h2>
-      <div>
-        <div>
-          <p>Coquilles Saint-Jacques</p>
-          <p>Accompagnées d'une purée de panais</p>
-        </div>
-        <p>40€</p>
-      </div>
-    </section>
-    <section id="desserts">
-      <h2>DESSERTS</h2>
-      <div>
-        <div>
-          <p>Pétales de violettes glacées</p>
-          <p>Et purée de noisettes</p>
-        </div>
-        <p>18€</p>
-      </div>
-    </section>
-    <footer>
-      <img src="images/logo/ohmyfood.png" alt="ohmyfood logo">
-      <a href="">Proposer un restaurant</a>
-      <a href="">Devenir partenaire</a>
-      <a href="">Mentions légales</a>
-      <a href="">Contact</a>
-    </footer>
-  </div>
 
+
+
+  <footer>
+    <h3 class="footer__title">ohmyfood</h3>
+    <a href=""><i class="fa-solid fa-utensils"></i> Proposer un restaurant</a>
+    <a href=""><i class="fa-solid fa-handshake-angle"></i> Devenir partenaire</a>
+    <a href="">Mentions légales</a>
+    <a href="">Contact</a>
+  </footer>
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/243cba24df.js" crossorigin="anonymous"></script>
 
 </body>
 </html>
