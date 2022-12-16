@@ -42,12 +42,9 @@
       }
 
     }
-
-  button {
-    @include button;
-  }
 }
 
 .steps__container, .restaurants__container {
-  @include flex-center
+  @include flex-center;
+  flex-direction: column;
 }

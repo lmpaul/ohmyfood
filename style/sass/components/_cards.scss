@@ -80,13 +80,14 @@
 }
 
 .card-food {
+  min-width: calc(100% - 40px);
   @include card;
   background-color: white;
   padding: 20px;
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
-  margin: 10px 0;
+  margin: 15px 0;
 
   &__text {
     h3 {

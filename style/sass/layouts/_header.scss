@@ -3,15 +3,21 @@ header {
   margin: 0;
   width: 100%;
   padding: 15px 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include flex-center;
   text-align: center;
   box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
   z-index: 10;
   position: fixed;
   top: 0;
-  & img {
+
+  img {
     width: 40%;
+  }
+
+  a {
+    position: absolute;
+    left: 20px;
+    font-size: 20px;
+    color: darken($text-light, 20);
   }
 }

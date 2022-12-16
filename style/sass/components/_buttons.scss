@@ -1,0 +1,7 @@
+.button-primary {
+  @include button;
+
+  &:hover {
+    @include button-hover
+  }
+}
