@@ -19,10 +19,19 @@
   box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.1);
   border-radius: 20px;
   margin: 15px 0;
+  overflow: hidden;
 }
 
 @mixin flex-center {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+@mixin menu-section {
+  animation-name: display-section;
+  animation-duration: 400ms;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+  opacity: 0;
 }

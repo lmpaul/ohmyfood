@@ -5,6 +5,7 @@
   @include flex-center;
   position: relative;
   width: 80%;
+  overflow: visible;
 
   &--pink {
     background-color: lighten($color-primary, 35);
@@ -36,7 +37,6 @@
 .card-restaurant {
   @include card;
   width: 100%;
-  overflow: hidden;
   text-decoration: none;
   color: black;
 
@@ -81,25 +81,84 @@
   min-width: calc(100% - 40px);
   @include card;
   background-color: white;
-  padding: 20px;
   display: flex;
   justify-content: space-between;
-  align-items: flex-end;
-  margin: 15px 0;
+  align-items: center;
+  height: 80px;
+
+
+
+  &__info {
+    width: 100%;
+    padding: 0 15px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    align-items: flex-end;
+    transform-origin: left;
+    transition: width 180ms ease-in-out;
+  }
 
   &__text {
+
+    height: 100%;
+
     h3 {
       font-weight: 500;
       margin: 3px 0;
+      transform-origin: left;
+      transition: ease;
     }
 
     p {
       font-weight: 300;
+      transform-origin: left;
+      transition: all 100ms ease;
     }
   }
 
   &__price {
     font-weight: bold;
     font-size: 16px;
+    p {
+      transform-origin: right;
+      transition: ease;
+    }
+
+  }
+
+  &__validate {
+    cursor: pointer;
+    width: 0%;
+    height: 100%;
+    background-color: $color-tertiary;
+    color: white;
+    font-size: 30px;
+    @include flex-center;
+    transform-origin: right;
+    transition: width 200ms ease-in-out;
+
+    i {
+      display: block;
+      transform: rotate(90deg);
+      transition: transform 320ms ease-in-out;
+    }
+  }
+}
+
+.card-food:hover {
+  .card-food {
+    &__validate {
+      width: 20%;
+
+      i {
+        display: block;
+        transform: rotate(1turn)
+      }
+    }
+
+    &__info {
+      width: 80%;
+    }
   }
 }

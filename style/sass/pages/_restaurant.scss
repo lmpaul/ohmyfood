@@ -40,9 +40,6 @@
     font-family: $font-title;
   }
 
-  i {
-    font-size: 24px;
-  }
 }
 
 .restaurant-menu-section {
@@ -61,4 +58,32 @@
     width: 45px;
     margin: 10px 0;
   }
+}
+
+@keyframes display-section {
+  from {
+    transform: translateY(100px);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+
+}
+
+#starters {
+  @include menu-section;
+}
+
+#mains {
+  @include menu-section;
+  animation-delay: 300ms;
+}
+
+#deserts {
+  @include menu-section;
+  animation-delay: 600ms;
 }
