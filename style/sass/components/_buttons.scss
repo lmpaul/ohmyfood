@@ -5,3 +5,23 @@
     @include button-hover
   }
 }
+
+.button-like {
+  i {
+    font-size: 28px;
+  }
+
+  &__full {
+    color: $color-primary;
+    display: none !important;
+  }
+
+  &:hover &__full{
+    display: block !important;
+  }
+
+  &:hover &__empty {
+    display: none !important;
+  }
+
+}
