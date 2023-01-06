@@ -77,16 +77,31 @@
   }
 }
 
+@keyframes card-food-animation {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+
+
+
+
 .card-food {
-  min-width: calc(100% - 40px);
+  width: 100%;
+  margin: 0 auto;
   @include card;
   background-color: white;
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: 80px;
-
-
 
   &__info {
     width: 100%;
@@ -100,24 +115,23 @@
   }
 
   &__text {
-
+    width: calc(100% - 30px);
     height: 100%;
 
     h3 {
       font-weight: 500;
       margin: 3px 0;
-      transform-origin: left;
-      transition: ease;
+      @include text-ellipsis
     }
 
     p {
       font-weight: 300;
-      transform-origin: left;
-      transition: all 100ms ease;
+      @include text-ellipsis
     }
   }
 
   &__price {
+    width: 30px;
     font-weight: bold;
     font-size: 16px;
     p {
@@ -144,6 +158,8 @@
       transition: transform 320ms ease-in-out;
     }
   }
+
+
 }
 
 .card-food:hover {
@@ -159,6 +175,8 @@
 
     &__info {
       width: 80%;
+
+
     }
   }
 }

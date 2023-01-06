@@ -17,10 +17,10 @@
 .restaurant-menu {
   z-index: 2;
   margin-top: 250px;
-  width: 100%;
+  width: calc(100% - 40px);
   background-color: $light-grey;
   border-radius: 60px 60px 0 0;
-  padding: 30px 5%;
+  padding: 20px;
   @include flex-center;
   flex-direction: column;
 
@@ -58,32 +58,21 @@
     width: 45px;
     margin: 10px 0;
   }
-}
 
-@keyframes display-section {
-  from {
-    transform: translateY(100px);
-    opacity: 0;
+  &__cards {
+    div:nth-child(1) {
+      @include card-food-animated;
+    }
+
+    div:nth-child(2) {
+      @include card-food-animated;
+      animation-delay: 250ms;
+    }
+
+    div:nth-child(3) {
+      @include card-food-animated;
+      animation-delay: 400ms;
+    }
   }
 
-  to {
-    transform: translateY(0);
-    opacity: 1;
-  }
-
-
-}
-
-#starters {
-  @include menu-section;
-}
-
-#mains {
-  @include menu-section;
-  animation-delay: 300ms;
-}
-
-#deserts {
-  @include menu-section;
-  animation-delay: 600ms;
 }
