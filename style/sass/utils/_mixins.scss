@@ -43,3 +43,11 @@
   overflow: hidden;
   text-overflow: ellipsis;
 }
+
+@mixin appear-from-top-mixin {
+  animation-name: appear-from-top;
+  animation-delay: $loader-delay;
+  animation-duration: $loader-animation-duration;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}

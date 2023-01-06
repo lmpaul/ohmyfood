@@ -1,29 +1,3 @@
-@keyframes loader {
-  from {
-    height: 100vh;
-    opacity: 1;
-  }
-  to {
-    height: 0;
-    opacity: 0;
-  }
-}
-
-@keyframes loader-img {
-
-  0% {
-    transform: scale(0.8)
-  }
-
-  50% {
-    transform: scale(0.65)
-  }
-
-  100% {
-    transform: scale(0.8)
-  }
-}
-
 .loader {
   @include flex-center;
   flex-direction: column;
@@ -39,7 +13,7 @@
   animation-delay: $loader-delay;
 
   &__text {
-    animation-name: loader-img;
+    animation-name: loader-text;
     animation-timing-function: ease-in-out;
     animation-duration: 2000ms;
     animation-fill-mode: forwards;
