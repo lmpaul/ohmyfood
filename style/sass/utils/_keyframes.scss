@@ -23,7 +23,7 @@
 @keyframes loader-text {
 
   0% {
-    transform: scale(0.7)
+    transform: scale(0.75)
   }
 
   50% {
@@ -31,6 +31,37 @@
   }
 
   100% {
-    transform: scale(0.7)
+    transform: scale(0.75)
+  }
+}
+
+@keyframes loader-emoji {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(1turn);
+  }
+}
+
+@keyframes body-scroll {
+  from {
+    overflow-y: hidden;
+  }
+
+  to {
+    overflow-y: scroll;
+  }
+}
+
+@keyframes card-food-animation {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0);
+    opacity: 1;
   }
 }

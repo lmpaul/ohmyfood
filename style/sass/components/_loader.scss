@@ -23,4 +23,13 @@
     margin: 10px 0;
     font-size: 60px;
   }
+
+  &__emoji {
+    font-size: 40px;
+    animation-name: loader-emoji;
+    animation-timing-function: ease-in-out;
+    animation-duration: $loader-delay;
+    animation-fill-mode: forwards;
+    // animation-iteration-count: infinite;
+  }
 }
