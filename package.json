@@ -4,13 +4,18 @@
   "description": "OpenClassrooms Project",
   "main": "index.js",
   "scripts": {
-    "sass": "sass --watch ./style/sass/main.scss:./style/style.css --style compressed"
+    "sass": "sass --watch ./style/sass/main.scss:./style/style.css --style compressed",
+    "prefix": "postcss ./style/style.css --use autoprefixer -d ./style/prefixed"
   },
   "repository": "git@github.com:lmpaul/ohmyfood.git",
   "author": "Paul Le Mercier <paul.lemercier05@gmail.com>",
   "license": "MIT",
+  "browserslist": "last 4 versions",
   "private": true,
   "dependencies": {
+    "autoprefixer": "^10.4.13",
+    "postcss": "^8.4.20",
+    "postcss-cli": "^10.1.0",
     "sass": "^1.56.2"
   }
 }
