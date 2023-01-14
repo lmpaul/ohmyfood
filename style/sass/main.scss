@@ -9,11 +9,11 @@
 // Importing scss layouts
 @import './layouts/layouts';
 
-// Importing scss for pages
-@import './pages/home';
-@import './pages/restaurant';
-
 // Importing scss for components
 @import './components/cards';
 @import './components/buttons';
 @import './components/loader';
+
+// Importing scss for pages
+@import './pages/home';
+@import './pages/restaurant';

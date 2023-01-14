@@ -64,6 +64,8 @@
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
+    background-color: white;
+    height: 50px;
 
     & i {
       font-size: 22px;
@@ -77,11 +79,6 @@
   }
 }
 
-
-
-
-
-
 .card-food {
   width: 100%;
   margin: 0 auto;
@@ -93,29 +90,27 @@
   height: 80px;
 
   &__info {
-    width: 90%;
+    width: calc(100% - 30px);
     padding: 0 15px;
     display: flex;
     justify-content: space-between;
     margin: 0 auto;
     align-items: flex-end;
-    transform-origin: left;
     transition: width 180ms ease-in-out;
   }
 
   &__text {
-    width: calc(100% - 30px);
+    min-width: calc(100% - 30px);
     height: 100%;
 
     h3 {
       font-weight: 500;
-      margin: 3px 0;
-      @include text-ellipsis
+      @include text-ellipsis;
     }
 
     p {
       font-weight: 300;
-      @include text-ellipsis
+      @include text-ellipsis;
     }
   }
 
@@ -123,22 +118,18 @@
     width: 30px;
     font-weight: bold;
     font-size: 16px;
-    p {
-      transform-origin: right;
-      transition: ease;
-    }
 
   }
 
   &__validate {
     cursor: pointer;
+    overflow-x: hidden;
     width: 0%;
     height: 100%;
     background-color: $color-tertiary;
     color: white;
     font-size: 30px;
     @include flex-center;
-    transform-origin: right;
     transition: width 200ms ease-in-out;
 
     i {
@@ -163,8 +154,12 @@
     }
 
     &__info {
-      width: 70%;
-
+      min-width: calc(80% - 30px);
     }
+
+    &__text {
+      min-width: calc(100% - 30px);
+    }
+
   }
 }

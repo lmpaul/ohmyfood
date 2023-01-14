@@ -37,15 +37,13 @@
 }
 
 @mixin text-ellipsis {
-  max-width: 95%;
   white-space: nowrap;
-  max-width: 95%;
   overflow: hidden;
   text-overflow: ellipsis;
 }
 
-@mixin appear-from-top-mixin {
-  animation-name: appear-from-top;
+@mixin appear-from-bottom-mixin {
+  animation-name: appear-from-bottom;
   animation-delay: $loader-delay;
   animation-duration: $loader-animation-duration;
   animation-timing-function: ease-in-out;

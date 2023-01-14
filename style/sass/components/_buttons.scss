@@ -7,21 +7,37 @@
 }
 
 .button-like {
+  width: 50px;
+  height: 100%;
+  top: 0;
+  position: relative;
+
+
   i {
     font-size: 28px;
+    transition: opacity ease-in 300ms;
+    position: absolute;
+    top: 10px;
+    right: 0;
   }
 
   &__full {
     color: $color-primary;
-    display: none !important;
+    opacity: 0;
+    display: none;
+  }
+
+  &__empty {
+    opacity: 1;
   }
 
   &:hover &__full{
-    display: block !important;
+    display: block;
+    opacity: 1;
   }
 
   &:hover &__empty {
-    display: none !important;
+    opacity: 0;
   }
 
 }

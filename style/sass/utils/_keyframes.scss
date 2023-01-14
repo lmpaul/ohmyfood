@@ -1,9 +1,10 @@
-@keyframes appear-from-top {
+@keyframes appear-from-bottom {
   from {
     transform: translateY(100vh);
   }
 
   to {
+    transform: translateY(0vh);
     opacity: 1;
   }
 }
@@ -15,7 +16,7 @@
   }
 
   to {
-    height: 0;
+    height: 0vh;
     opacity: 0;
   }
 }
